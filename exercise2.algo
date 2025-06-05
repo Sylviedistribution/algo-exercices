@@ -1,0 +1,24 @@
+ALGORITHM gradeEvaluator
+VAR
+    score: FLOAT
+BEGIN
+    WRITE("Enter a grade between 0 and 100");
+    READ(score);
+
+    WHILE (score<0 OR score>100) DO
+        WRITE("The grade is not between 0 and 100. Please give another grade.");
+        READ(score);
+    END_WHILE
+
+    IF (score>=90) THEN
+        WRITE("A");
+    ELSE_IF (score>=80) THEN
+        WRITE("B");
+    ELSE_IF (score>=70) THEN
+        WRITE("C");
+    ELSE_IF (score>=60) THEN
+        WRITE("D");
+    ELSE
+        WRITE("F");
+    END_IF
+END

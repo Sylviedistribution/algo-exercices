@@ -1,0 +1,17 @@
+ALGORITHM leapYearChecker
+VAR
+    year: INTEGER;
+
+BEGIN
+    WRITE("Give a year: ");
+    READ(year);
+    IF (year%400=0) THEN
+        WRITE("It's leap year.");
+    ELSE_IF (year%4=0) THEN
+        IF (year%100!=0) THEN
+            WRITE("It's leap year.");
+        END_IF
+    ELSE THEN
+        WRITE("It's not leap year.");
+    END_IF
+END

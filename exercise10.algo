@@ -1,0 +1,12 @@
+ALGORITHM greaterThan100
+VAR
+    n: FLOAT
+    sum: FLOAT
+BEGIN
+    sum:=0;
+    WHILE (sum<100) DO
+        READ(n);
+        sum= sum + n;
+        WRITE("The sum is ", n);
+    END_WHILE
+END
